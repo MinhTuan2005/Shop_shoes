@@ -15,8 +15,8 @@ use Illuminate\Support\Facades\Route;
 
 Route::group(['as'=>'admin', 'prefix'=>'admin'], function () {
     Route::get('/', function (){
-        return view('dashboard');
-    })->name('.dashboard');
+        return view('home');
+    })->name('.home');
     Route::get('/basic-table', function (){
         return view('basic-table');
     })->name('.basic-table');
